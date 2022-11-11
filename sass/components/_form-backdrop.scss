@@ -1,0 +1,96 @@
+.form__title {
+    font-style: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: var(--primary-text-color);
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+
+
+.form__label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    margin-bottom: 4px;
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+}
+
+.form__control {
+    position: relative;
+
+}
+
+.form__input {
+    width: 100%;
+    padding: 12px 11px 12px 32px;
+    border: 1px solid var(--form-border);
+    outline: none;
+    border-radius: 4px;
+
+    transition-property: var(--accent-text-color);
+    transition-duration: 250ms;
+    transition-timing-function: var(--time);
+
+
+}
+
+.form__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time);
+
+}
+
+.form__text {
+    text-indent: 25px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+
+}
+
+.form__accent {
+    color: var(--accent-text-color);
+    text-decoration: inherit;
+}
+
+.form__input:focus {
+    border-color: var(--accent-text-color);
+}
+
+.form__input:focus+.form__icon {
+    fill: var(--accent-text-color);
+}
+
+.form__textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid var(--form-border);
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 20px;
+    outline: none;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--coment-placeholder);
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time);
+}
+
+.form__textarea:focus {
+    border-color: var(--accent-text-color);
+}

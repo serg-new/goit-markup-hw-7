@@ -1,0 +1,25 @@
+.project__invisible-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    padding: 63px 24px;
+    background-color: var(--invisible);
+    transform: translateX(100%);
+    pointer-events: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: var(--time);
+
+    color: var(--primary-white-color);
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+
+}
+
+.progect:hover .project__invisible-text {
+    transform: translateY(0);
+    opacity: 1;
+}

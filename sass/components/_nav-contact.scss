@@ -1,0 +1,48 @@
+.aut-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+
+}
+
+.aut-nav__icon {
+    fill: currentColor;
+
+}
+
+.aut-nav__item--left {
+    margin-left: 50px;
+}
+
+.aut-nav__link {
+    display: flex;
+    align-content: center;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time);
+}
+
+
+
+.aut-nav :hover,
+.aut-nav :focus {
+    color: var(--accent-text-color);
+
+}
+
+.aut-nav :hover,
+:focus .contact-link {
+    fill: var(--accent-text-color);
+
+}

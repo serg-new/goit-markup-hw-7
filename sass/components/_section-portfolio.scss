@@ -1,0 +1,77 @@
+.office {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.office__title {
+
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* приклади робіт*/
+.progect {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time);
+}
+
+
+.progect-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.progect__item {
+    display: block;
+    padding: 24px 20px;
+    margin: 0;
+
+    box-sizing: border-box;
+    width: 370px;
+
+    border: 1px solid var(--secondary-button);
+}
+
+.project__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0;
+    padding-bottom: 4px;
+
+}
+
+.project__text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin: 0;
+}
+
+.progect:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        0px 1px 1px rgba(0, 0, 0, 0.12);
+
+
+}
